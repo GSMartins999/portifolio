@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-
+    border: solid red 2px;
+    width: 100vw;
 }
 
 nav{
@@ -149,7 +150,6 @@ nav{
 .stack{
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
     gap: 20px;
@@ -179,3 +179,57 @@ nav{
 
 
 /* -------O que faço-------- */
+
+
+.oqfaz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin: 20px 0 60px 20px;
+}
+
+.ContainerServicos{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    gap: 20px;
+    height: 480px;
+    justify-content: center;
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 320px;
+    max-width: 320px;
+    height: 100%;
+    padding: 10px;
+    border: solid black 2px;
+    color: white;
+}
+
+.containertituloservico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    text-align: center;
+}
+
+.imgservicos{
+    width: 90%;
+    height: 200px;
+}
+
+
+/* --------Projetos que desenvolvi-------- */
+
+

@@ -18,4 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
       tech.style.backgroundColor = color;
     });
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const corfundo = {
+      one: '#824CBB',
+      two: '#574FFB',
+      tree: '#462572',
+    };
+  
+    const fundoElements = document.querySelectorAll('.fundo');
+  
+    fundoElements.forEach((fundo) => {
+      const type = fundo.getAttribute('data-type');
+      const color = corfundo[type] || '#CBE7FF';
+      fundo.style.backgroundColor = color;
+    });
+  });
   
