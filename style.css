@@ -1,8 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    border: solid red 2px;
     width: 100vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 nav{
@@ -13,6 +15,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;  
     font-size: x-large;  
+
 }
 
 .nome{
@@ -20,6 +23,7 @@ nav{
     margin-left: 20px;
     align-items: center;
     justify-content: center;
+
 }
 
 .tags{
@@ -30,11 +34,13 @@ nav{
     gap: 40px;
     margin-left: 20px;
     cursor: pointer;
+
 }
 
 .servico1:hover{
     color: blue;
     border-bottom: solid 2px black;
+
 }
 
 .divicon{
@@ -44,12 +50,14 @@ nav{
     margin-left: 20px;
     margin-right: 40px;
     cursor: pointer;
+
 }
 
 .icones{
     width: 50px;
     height: 50px;
     cursor: pointer;
+
 }
 
 
@@ -60,6 +68,7 @@ nav{
     height: auto;
     display: flex;
     flex-direction: row;
+
 }
 
 .texto{
@@ -67,11 +76,12 @@ nav{
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     flex-direction: column;
     margin-left: 20px;
-    font-size: large;  
+    font-size: x-large;  
     margin-top: 100px;
+
 
 }
 
@@ -80,6 +90,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .minhafoto{
@@ -100,9 +111,10 @@ nav{
     justify-content: left;
     margin-top: 50px;
     margin-bottom: 80px;
+
 }
 
-.conversation{
+.conversation {
     background-color: #1A2459;
     opacity: 82%;
     color: white;
@@ -110,6 +122,13 @@ nav{
     min-width: 200px;
     cursor: pointer;
     font-size: large;
+
+}
+
+.conversation a{
+    text-decoration: none;
+    color: white;
+
 }
 
 .baixarcv{
@@ -120,13 +139,19 @@ nav{
     cursor: pointer;
     min-width: 200px;
     font-size: large;
+
 }
 
-.conversation:hover{
+.baixarcv a{
+    text-decoration: none;
+    color: white;
+}
+
+.conversation a:hover{
     color: #F2DF8B;
 }
 
-.baixarcv:hover{
+.baixarcv a:hover{
     color: #F2DF8B;
 }
 
@@ -137,6 +162,7 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100vw;
+    font-size: x-large;
 
 }
 
@@ -150,20 +176,22 @@ nav{
 .stack{
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
+    margin-left: 30px;
     padding: 20px;
     gap: 20px;
     width: 95%;
     justify-content: space-between;
+
 }
 
 .logo{
-    width: 90%;
+    width: 80%;
     height: 80%;
     max-width: 100px;
     max-height: 90px;
     min-width: 50px;
     min-height: 50px;
+
 }
 
 .tech {
@@ -187,7 +215,23 @@ nav{
     justify-content: center;
     width: 100vw;
     height: auto;
-    margin: 20px 0 60px 20px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+    font-size: x-large;
+
+}
+
+.oqfazh3{
+    font-size: x-large;
+    margin-left: 20px;
+}
+.oqfazp{
+    font-size: large;
+    margin-left: 20px;
+}
+
+.tituloSer{
+    font-size: large;
 }
 
 .ContainerServicos{
@@ -212,8 +256,11 @@ nav{
     max-width: 320px;
     height: 100%;
     padding: 10px;
-    border: solid black 2px;
     color: white;
+}
+.fundo:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .containertituloservico{
@@ -232,4 +279,212 @@ nav{
 
 /* --------Projetos que desenvolvi-------- */
 
+.carousel-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 900px;
+    gap: 50px;
+    box-shadow: 4px 4px 10px rgba(21, 6, 88, 0.5);
+    border-radius: 20px;
+
+
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.textoCarrossel{
+    text-align: center;
+    background-color:  #F7F7F7;
+    margin:  0 auto;
+    font-size: x-large;
+    border-radius: 20px;
+    color: black;
+    height: 220px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+    display: none;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.carousel-button:hover{
+    color: gray;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+
+.project-icon{
+    background-color: #F7F7F7;
+
+}
+
+.carousel-title{
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+.carousel-description{
+    margin-left: 20px;
+    font-size: large;
+}
+
+.visit-site{
+    color: #15367A;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    margin-top: 40px;
+    align-items: last baseline;
+    justify-content: center;
+    border: #15367A solid 2px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.visit-site a{
+    text-decoration: none;
+    color: #15367A;
+}
+.visit-site:hover{
+    color:#F2DF8B;
+}
+
+.project-technologies{
+    gap: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+span{
+    border: #3E7AF3 solid 2px;
+    width: auto;
+    min-width: 80px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    color: #3E7AF3;
+
+}
+
+/* Footer */
+
+footer{
+    background-color: #1A2459;
+    opacity: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: auto;
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 0;
+
+}
+
+/* contatos */
+
+.contatoscont{
+    margin-bottom: 50px;
+}
+.contatoscont p{
+    font-size: x-large;
+}
+.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.containerIcones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.icones{
+    border-radius: 50px;
+}
+.icones:hover{
+    background-color: #F2DF8B;
+}
+
+.textoCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.container a:hover{
+    color: #F2DF8B;
+}
+
+.iconesF{
+    width: 100px;
+    border-radius: 50px;
+}
+
+.contatosTit{
+    font-size: 3rem;
+}
+
+.oqfaz p{
+    font-size: large;
+}
 
