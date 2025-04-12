@@ -124,6 +124,9 @@ nav{
     font-size: large;
 
 }
+.conversation:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
 
 .conversation a{
     text-decoration: none;
@@ -142,6 +145,9 @@ nav{
 
 }
 
+.baixarcv:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
 .baixarcv a{
     text-decoration: none;
     color: white;
@@ -149,10 +155,12 @@ nav{
 
 .conversation a:hover{
     color: #F2DF8B;
+
 }
 
 .baixarcv a:hover{
     color: #F2DF8B;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -176,12 +184,16 @@ nav{
 .stack{
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
     padding: 20px;
     gap: 20px;
     width: 95%;
     justify-content: space-between;
 
+}
+
+.tech:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .logo{
@@ -241,7 +253,7 @@ nav{
     align-items: center;
     margin-top: 40px;
     margin-left: 20px;
-    gap: 20px;
+    gap: 40px;
     height: 480px;
     justify-content: center;
 }
@@ -385,12 +397,13 @@ nav{
     font-weight: bold;
 }
 
+
 .visit-site a{
     text-decoration: none;
     color: #15367A;
 }
 .visit-site:hover{
-    color:#F2DF8B;
+    background-color:#e6e6e6;
 }
 
 .project-technologies{
@@ -470,7 +483,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: large;
+    font-size: large;   
 
 }
 
@@ -645,11 +658,13 @@ footer{
     .conversation{
         width: 45%;
         min-width: 100px;
+        height: 60px;
     }
 
     .baixarcv{
         width: 45%;
         min-width: 100px;
+        height: 60px;
     }
     .containerIcones {
         display: flex;
