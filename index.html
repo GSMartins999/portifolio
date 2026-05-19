@@ -1,379 +1,397 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Giovanni Martins | Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio de Giovanni Martins, Desenvolvedor Full Stack com experiência em criação de landing pages, sites e sistemas sob medida.">
+    
+    <!-- Google Fonts: Poppins & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal -->
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <script src="controle.js"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="nome">
-            <p>
-                &lt;giovanni&gt;
-            </p>
-        </div>
-        <div class="tags">
-            <p class="servico1" onclick="document.getElementById('servico').scrollIntoView({ behavior: 'smooth' });">
-                Serviços
-            </p>
-            <p class="servico1" onclick="document.getElementById('projetos').scrollIntoView({ behavior: 'smooth' });">
-                Projetos
-            </p>
-            <p class="servico1" onclick="document.getElementById('contatos').scrollIntoView({ behavior: 'smooth' });">
-                Contatos
-            </p>
-        </div>
-        <div class="divicon">
-            <a href="https://www.linkedin.com/in/giovanni-martins-21bb94264/" target="_blank">
-                <img src="./img/linkedin.png" alt="logo linkedin" class="icones">
-            </a>
-            <a href="mailto:giovannisouza213@gmail.com" target="_blank">
-                <img src="./img/o-email.png" alt="logo email" class="icones">
-            </a>
-            <a href="https://wa.me/qr/IDDUHHCXA5TRB1" target="_blank">
-                <img src="./img/whatsapp (1).png" alt="logo whatsapp" class="icones">
-            </a>
-        </div>
+    <!-- Cabeçalho / Navegação -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#">&lt;giovanni&gt;</a>
+            </div>
+            <div class="nav-links">
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#projetos" class="nav-link">Projetos</a>
+                <a href="#contatos" class="nav-link">Contatos</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/giovanni-martins-21bb94264/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="./img/linkedin.png" alt="LinkedIn" class="icon">
+                </a>
+                <a href="mailto:giovannisouza216@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                    <img src="./img/o-email.png" alt="Email" class="icon">
+                </a>
+                <a href="https://wa.me/qr/IDDUHHCXA5TRB1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <img src="./img/whatsapp (1).png" alt="WhatsApp" class="icon">
+                </a>
+            </div>
+        </nav>
+    </header>
 
-    </nav>
-    <main >
-        <div class="apresentacao">
-            <div class="texto">
-                <p>
-                    Olá, eu sou o <br> <strong>Giovanni Martins </strong>
-                </p>
-                <p>
-                    Desenvolvedor Full Stack
-                </p>
-                <p>
-                    Com mais de quatro anos de experiência em tecnologia, ofereço soluções inovadoras
-                    para o seu negócio. Se deseja impulsionar sua empresa
-                    com uma solução web personalizada, estou pronto para
-                    transformar suas ideias em sucesso. Vamos juntos criar
-                    uma presença online marcante?
-                </p>
-                <div class="botao">
-                    <button class="conversation"><a href="https://wa.me/qr/IDDUHHCXA5TRB1" target="_blank">
+    <main>
+        <!-- Seção de Apresentação -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Olá, eu sou o <br> <span class="highlight">Giovanni Martins</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Desenvolvedor Full Stack</h2>
+                    <p class="hero-description">
+                        Com mais de quatro anos de experiência em tecnologia, ofereço soluções inovadoras
+                        para o seu negócio. Se deseja impulsionar sua empresa com uma solução web personalizada,
+                        estou pronto para transformar suas ideias em sucesso. Vamos juntos criar uma presença online marcante?
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/qr/IDDUHHCXA5TRB1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             Vamos Conversar
                         </a>
-                    </button>
-                    <button class="baixarcv"><a href="./arquivo/Curriculo Giovanni de Souza Martins (1).pdf" download>
+                        <a href="./arquivo/Curriculo Giovanni de Souza Martins (1).pdf" download class="btn btn-secondary">
                             Baixar CV
                         </a>
-                    </button>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="glow-backdrop"></div>
+                    <img src="./img/prog.png" alt="Foto de Giovanni Martins" class="hero-image">
                 </div>
             </div>
-            <div class="containerimg">
-                <img src="./img/prog.png" alt="Minha Foto" class="minhafoto">
-            </div>
-        </div>
-
-
-        <div class="minhastack">
-            <div>
-                <p class="minhastacktexto">
-                    <strong>Minha stack de tecnologias</strong>
-                </p>
-            </div>
-
-
-            <div class="stack">
-                <div class="tech" data-type="react">
-                    <img src="./img/React.png" alt="logo react" class="logo">
-                </div>
-                <div class="tech" data-type="js">
-                    <img src="./img/js.png" alt="logo js" class="logo">
-                </div>
-                <div class="tech" data-type="ts">
-                    <img src="./img/ts.png" alt="logo ts" class="logo">
-                </div>
-                <div class="tech" data-type="mysql">
-                    <img src="./img/mysql.png" alt="logo mysql" class="logo">
-                </div>
-                <div class="tech" data-type="html">
-                    <img src="./img/html.png" alt="logo html" class="logo">
-                </div>
-                <div class="tech" data-type="css">
-                    <img src="./img/css.png" alt="logo css" class="logo">
-                </div>
-                <div class="tech" data-type="python">
-                    <img src="./img/python.png" alt="logo python" class="logo">
-                </div>
-                <div class="tech" data-type="wordpress">
-                    <img src="./img/wordpress.png" alt="logo WordPress" class="logo">
-                </div>
-            </div>
-        </div>
-
-        </div>
-        <div class="oqfaz" id="servico">
-            <h3 class="oqfazh3">
-                O que faço?
-            </h3>
-            <p class="oqfazp">
-                Crio soluções tecnologicas para <strong> impulsionar seu negócio</strong>
-            </p>
-
-            <div class="ContainerServicos">
-                <div class="fundo" data-type="one">
-                    <img src="./img/servico1.png" alt="serviço 1" class="imgservicos">
-                    <div class="containertituloservico">
-                        <h3 class="tituloSer">
-                            Precisa de visibilidade?<br>
-                            Que tal uma Landing Page?
-                        </h3>
-                    </div>
-                    <p class="detalhes">
-                        Crio Landing Pages personalizadas para expandir
-                        seu alcance e aumentar suas conversões de
-                        forma eficiente.
-                    </p>
-                </div>
-                <div class="fundo" data-type="two">
-                    <img src="./img/servico2.png" alt="serviço 2" class="imgservicos">
-                    <div class="containertituloservico">
-                        <h3 class="tituloSer">
-                            Precisa de Presença online?<br>
-                            Que tal um site?
-                        </h3>
-                    </div>
-
-                    <p class="detalhes">
-                        Desenvolvo sites personalizados para
-                        fortalecer sua presença online,
-                        ajudando a destacar sua marca e
-                        alcançar mais pessoas de forma profissional.
-                    </p>
-                </div>
-                <div class="fundo" data-type="tree">
-                    <img src="./img/servico3.png" alt="serviço 3" class="imgservicos">
-                    <div class="containertituloservico">
-                        <h3 class="tituloSer">
-                            Problemas na empresa?
-                            <br>
-                            Que tal um sistema?
-                        </h3>
-                    </div>
-                    <p class="detalhes">
-                        Desenvolvo sistemas personalizados para
-                        aumentar a eficiência e otimizar os
-                        processos da sua empresa.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Projetos -->
-        <div  id="projetos">
-            <h2 class="carousel-title">Projetos que Desenvolvi</h2>
-            <p class="carousel-description">
-                Confira alguns projetos que desenvolvi. O próximo a se concretizar será o seu!
-            </p>
-        </div>
-        <section class="carousel-container">
-
-
-            <!-- Botões de navegação -->
-            <button class="carousel-button prev">❮</button>
-            <div class="carousel">
-                <!-- Item 1 -->
-                <div class="carousel-item">
-                    <div class="textoCarrossel">
-                        <h3>Sistema para o RU</h3>
-                        <p>CEFET-MG | 2022</p>
-                        <p>
-                            O Sistema RU é uma plataforma que permite aos estudantes agendar refeições no restaurante
-                            universitário, reduzindo o desperdício.
-                        </p>
-                    </div>
-                    <img src="./img/ru banner.png" alt="Tela Sistema RU" class="project-banner">
-                    <div class="project-technologies">
-                        <span>JavaScript</span>
-                        <span>HTML</span>
-                        <span>Bootstrap</span>
-                        <span>Laravel</span>
-                        <span>SQL</span>
-                    </div>
-                    <button class="visit-site"><a
-                            href="https://www.linkedin.com/posts/giovanni-martins-21bb94264_na-%C3%BAltima-quarta-feira-minha-dupla-liliane-activity-7254572243970646017-71uF?utm_source=share&utm_medium=member_desktop" target="_blank">
-
-                            Visitar Site</a></button>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="carousel-item">
-                    <div class="textoCarrossel">
-                        <h3>Landing Page The Last Of Us</h3>
-                        <p>Projeto Pessoal | 2023</p>
-                        <p>
-                            Uma landing page visual e imersiva de The Last Of Us, destacando a essência do jogo com
-                            imagens
-                            impactantes e informações chamativas.
-                        </p>
-                    </div>
-                    <img src="./img/the last of us banner.png" alt="Banner The Last Of Us" class="project-banner">
-                    <div class="project-technologies">
-                        <span>JavaScript</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                    <button class="visit-site"><a href="https://the-last-of-us-seven.vercel.app" target="_blank"> Visitar
-                            Site</a></button>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="carousel-item">
-                    <div class="textoCarrossel">
-                        <h3>Pokédex</h3>
-                        <p>Bootcamp | 2023</p>
-                        <p>
-                            Uma Pokédex interativa e responsiva que exibe stats e habilidades dos Pokémon e permite
-                            capturá-los.
-                        </p>
-                    </div>
-                    <img src="./img/pokedex banner.png" alt="Banner Pokédex" class="project-banner">
-                    <div class="project-technologies">
-                        <span>JavaScript</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>API</span>
-                    </div>
-                    <button class="visit-site"><a href="https://pokedex-sooty-tau.vercel.app" target="_blank">Visitar Site</a></button>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="carousel-item">
-                    <div class="textoCarrossel">
-                        <h3>E-commerce</h3>
-                        <p>Bootcamp | 2023</p>
-                        <p>
-                            Um e-commerce de roupas com temática de espaço e astronautas, oferecendo uma experiência de
-                            compra interativa e visualmente envolvente.
-                        </p>
-                    </div>
-                    <img src="./img/ecomerce banner.png" alt="Banner E-commerce" class="project-banner">
-                    <div class="project-technologies">
-                        <span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                    <button class="visit-site"><a href="https://labecomerce.vercel.app" target="_blank"> Visitar Site</a></button>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="carousel-item">
-                    <div class="textoCarrossel">
-                        <h3>Redes Sociais</h3>
-                        <p>Bootcamp | 2023</p>
-                        <p>
-                            Uma plataforma semelhante ao X (antigo Twitter), com funcionalidades de interação como
-                            comentários e curtidas.
-                        </p>
-                    </div>
-                    <img src="./img/labedit banner.png" alt="Banner Redes Sociais" class="project-banner">
-                    <div class="project-technologies">
-                        <span>React</span>
-                        <span>TypeScript</span>
-                        <span>API</span>
-                        <span>SQL</span>
-                    </div>
-                    <button class="visit-site"><a href="https://projeto-integrator-front.vercel.app" target="_blank"> Visitar
-                            Site</a></button>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="carousel-item">
-                    <div class="textoCarrossel">
-                        <h3>Automação com Python</h3>
-                        <p>Bootcamp | 2024</p>
-                        <p>
-                            Projeto de automação para cadastrar itens automaticamente em um site, facilitando o processo
-                            e
-                            aumentando a eficiência.
-                        </p>
-                    </div>
-                    <img src="./img/automacao banner.png" alt="Banner Automação com Python" class="project-banner">
-                    <div class="project-technologies">
-                        <span>Python</span>
-                    </div>
-                </div>
-
-                <!-- Item 7 -->
-                <div class="carousel-item">
-                    <div class="textoCarrossel">
-                        <h3>Site Entre Cartas</h3>
-                        <p>Projeto de Extensão | 2024-2025</p>
-                        <p>
-                            Site desenvolvido para o projeto Entre Cartas, promovendo a leitura e formação de leitores,
-                            com
-                            informações sobre atividades e eventos.
-                        </p>
-                    </div>
-                    <img src="./img/entrecartas.png" alt="Banner Site Entre Cartas" class="project-banner">
-                    <div class="project-technologies">
-                        <span>WordPress</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                    <button class="visit-site"><a href="https://www.entrecartas.cefetmg.br" target="_blank"> Visitar Site</a></button>
-                </div>
-            </div>
-            <button class="carousel-button next">❯</button>
         </section>
 
-      
+        <!-- Seção Stack de Tecnologias -->
+        <section class="stack-section">
+            <div class="section-container">
+                <h3 class="section-title text-center">Minha stack de tecnologias</h3>
+                <div class="stack-grid">
+                    <div class="tech-card" data-type="react" title="React">
+                        <img src="./img/React.png" alt="Logo React" class="tech-logo">
+                    </div>
+                    <div class="tech-card" data-type="js" title="JavaScript">
+                        <img src="./img/js.png" alt="Logo JavaScript" class="tech-logo">
+                    </div>
+                    <div class="tech-card" data-type="ts" title="TypeScript">
+                        <img src="./img/ts.png" alt="Logo TypeScript" class="tech-logo">
+                    </div>
+                    <div class="tech-card" data-type="mysql" title="MySQL">
+                        <img src="./img/mysql.png" alt="Logo MySQL" class="tech-logo">
+                    </div>
+                    <div class="tech-card" data-type="html" title="HTML5">
+                        <img src="./img/html.png" alt="Logo HTML5" class="tech-logo">
+                    </div>
+                    <div class="tech-card" data-type="css" title="CSS3">
+                        <img src="./img/css.png" alt="Logo CSS3" class="tech-logo">
+                    </div>
+                    <div class="tech-card" data-type="python" title="Python">
+                        <img src="./img/python.png" alt="Logo Python" class="tech-logo">
+                    </div>
+                    <div class="tech-card" data-type="wordpress" title="WordPress">
+                        <img src="./img/wordpress.png" alt="Logo WordPress" class="tech-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção O que faço (Serviços) -->
+        <section class="services-section" id="servicos">
+            <div class="section-container">
+                <div class="services-header">
+                    <h2 class="section-title">O que faço?</h2>
+                    <p class="section-subtitle">
+                        Crio soluções tecnológicas para <span class="highlight-text">impulsionar seu negócio</span>
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-type="one">
+                        <div class="service-image-wrapper">
+                            <img src="./img/servico1.png" alt="Ilustração Serviço Landing Page" class="service-img">
+                        </div>
+                        <h3 class="service-title">Precisa de visibilidade?<br>Que tal uma Landing Page?</h3>
+                        <p class="service-description">
+                            Crio Landing Pages personalizadas para expandir seu alcance e aumentar suas conversões de forma eficiente.
+                        </p>
+                    </div>
+
+                    <div class="service-card" data-type="two">
+                        <div class="service-image-wrapper">
+                            <img src="./img/servico2.png" alt="Ilustração Serviço Site" class="service-img">
+                        </div>
+                        <h3 class="service-title">Precisa de presença online?<br>Que tal um site?</h3>
+                        <p class="service-description">
+                            Desenvolvo sites personalizados para fortalecer sua presença online, ajudando a destacar sua marca e alcançar mais pessoas de forma profissional.
+                        </p>
+                    </div>
+
+                    <div class="service-card" data-type="three">
+                        <div class="service-image-wrapper">
+                            <img src="./img/servico3.png" alt="Ilustração Serviço Sistema" class="service-img">
+                        </div>
+                        <h3 class="service-title">Problemas na empresa?<br>Que tal um sistema?</h3>
+                        <p class="service-description">
+                            Desenvolvo sistemas personalizados para aumentar a eficiência e otimizar os processos da sua empresa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section class="projects-section" id="projetos">
+            <div class="section-container">
+                <div class="projects-header">
+                    <h2 class="section-title">Projetos que Desenvolvi</h2>
+                    <p class="section-subtitle">
+                        Confira alguns projetos que desenvolvi. O próximo a se concretizar será o seu!
+                    </p>
+                </div>
+
+                <!-- Carrossel de Projetos -->
+                <div class="carousel-container">
+                    <button class="carousel-button prev" aria-label="Projeto anterior">❮</button>
+                    
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+                            <!-- Projeto 1 -->
+                            <div class="carousel-slide">
+                                <div class="project-card">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Sistema para o RU</h3>
+                                        <span class="project-meta">CEFET-MG | 2022</span>
+                                        <p class="project-desc">
+                                            O Sistema RU é uma plataforma que permite aos estudantes agendar refeições no restaurante universitário, reduzindo o desperdício.
+                                        </p>
+                                        <div class="project-tags">
+                                            <span>JavaScript</span>
+                                            <span>HTML</span>
+                                            <span>Bootstrap</span>
+                                            <span>Laravel</span>
+                                            <span>SQL</span>
+                                        </div>
+                                        <a href="https://www.linkedin.com/posts/giovanni-martins-21bb94264_na-%C3%BAltima-quarta-feira-minha-dupla-liliane-activity-7254572243970646017-71uF" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                            Visitar Projeto
+                                        </a>
+                                    </div>
+                                    <div class="project-image-box">
+                                        <img src="./img/ru banner.png" alt="Tela Sistema RU" class="project-banner">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Projeto 2 -->
+                            <div class="carousel-slide">
+                                <div class="project-card">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Landing Page The Last Of Us</h3>
+                                        <span class="project-meta">Projeto Pessoal | 2023</span>
+                                        <p class="project-desc">
+                                            Uma landing page visual e imersiva de The Last Of Us, destacando a essência do jogo com imagens impactantes e informações chamativas.
+                                        </p>
+                                        <div class="project-tags">
+                                            <span>JavaScript</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                        </div>
+                                        <a href="https://the-last-of-us-seven.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                            Visitar Projeto
+                                        </a>
+                                    </div>
+                                    <div class="project-image-box">
+                                        <img src="./img/the last of us banner.png" alt="Banner The Last Of Us" class="project-banner">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Projeto 3 -->
+                            <div class="carousel-slide">
+                                <div class="project-card">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Pokédex</h3>
+                                        <span class="project-meta">Bootcamp | 2023</span>
+                                        <p class="project-desc">
+                                            Uma Pokédex interativa e responsiva que exibe stats e habilidades dos Pokémon e permite capturá-los.
+                                        </p>
+                                        <div class="project-tags">
+                                            <span>JavaScript</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>API</span>
+                                        </div>
+                                        <a href="https://pokedex-sooty-tau.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                            Visitar Projeto
+                                        </a>
+                                    </div>
+                                    <div class="project-image-box">
+                                        <img src="./img/pokedex banner.png" alt="Banner Pokédex" class="project-banner">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Projeto 4 -->
+                            <div class="carousel-slide">
+                                <div class="project-card">
+                                    <div class="project-info">
+                                        <h3 class="project-title">E-commerce</h3>
+                                        <span class="project-meta">Bootcamp | 2023</span>
+                                        <p class="project-desc">
+                                            Um e-commerce de roupas com temática de espaço e astronautas, oferecendo uma experiência de compra interativa e visualmente envolvente.
+                                        </p>
+                                        <div class="project-tags">
+                                            <span>React</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                        </div>
+                                        <a href="https://labecomerce.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                            Visitar Projeto
+                                        </a>
+                                    </div>
+                                    <div class="project-image-box">
+                                        <img src="./img/ecomerce banner.png" alt="Banner E-commerce" class="project-banner">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Projeto 5 -->
+                            <div class="carousel-slide">
+                                <div class="project-card">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Redes Sociais</h3>
+                                        <span class="project-meta">Bootcamp | 2023</span>
+                                        <p class="project-desc">
+                                            Uma plataforma semelhante ao X (antigo Twitter), com funcionalidades de interação como comentários e curtidas.
+                                        </p>
+                                        <div class="project-tags">
+                                            <span>React</span>
+                                            <span>TypeScript</span>
+                                            <span>API</span>
+                                            <span>SQL</span>
+                                        </div>
+                                        <a href="https://projeto-integrator-front.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                            Visitar Projeto
+                                        </a>
+                                    </div>
+                                    <div class="project-image-box">
+                                        <img src="./img/labedit banner.png" alt="Banner Redes Sociais" class="project-banner">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Projeto 6 -->
+                            <div class="carousel-slide">
+                                <div class="project-card">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Automação com Python</h3>
+                                        <span class="project-meta">Bootcamp | 2024</span>
+                                        <p class="project-desc">
+                                            Projeto de automação para cadastrar itens automaticamente em um site, facilitando o processo e aumentando a eficiência.
+                                        </p>
+                                        <div class="project-tags">
+                                            <span>Python</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-image-box">
+                                        <img src="./img/automacao banner.png" alt="Banner Automação com Python" class="project-banner">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Projeto 7 -->
+                            <div class="carousel-slide">
+                                <div class="project-card">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Site Entre Cartas</h3>
+                                        <span class="project-meta">Projeto de Extensão | 2024-2025</span>
+                                        <p class="project-desc">
+                                            Site desenvolvido para o projeto Entre Cartas, promovendo a leitura e formação de leitores, com informações sobre atividades e eventos.
+                                        </p>
+                                        <div class="project-tags">
+                                            <span>WordPress</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                        </div>
+                                        <a href="https://www.entrecartas.cefetmg.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                            Visitar Projeto
+                                        </a>
+                                    </div>
+                                    <div class="project-image-box">
+                                        <img src="./img/entrecartas.png" alt="Banner Site Entre Cartas" class="project-banner">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-button next" aria-label="Próximo projeto">❯</button>
+                </div>
+                
+                <!-- Dots / Indicadores do Carrossel -->
+                <div class="carousel-dots"></div>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <!-- Rodapé / Seção de Contatos -->
+    <footer class="footer-section" id="contatos">
+        <div class="section-container">
+            <div class="footer-header text-center">
+                <h2 class="footer-title">Contatos</h2>
+                <p class="footer-subtitle">Entre em contato comigo e vamos juntos impulsionar o seu negócio!</p>
+            </div>
 
-          <!-- Contatos -->
-          <div class="contatos" style="text-align: center;" id="contatos">
-            <div class="contatoscont">
-                <h3 class="contatosTit">
-                    Contatos
-                </h3>
-                <p>
-                    Entre em contato comigo e vamos juntos impulsionar o seu negócio!
+            <div class="contact-grid">
+                <a href="https://www.linkedin.com/in/giovanni-martins-21bb94264/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon-wrapper">
+                        <img src="./img/link.png" alt="LinkedIn" class="contact-icon">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">Giovanni Martins</span>
+                    </div>
+                </a>
+
+                <a href="mailto:giovannisouza216@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon-wrapper">
+                        <img src="./img/email.png" alt="Email" class="contact-icon">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">E-mail</span>
+                        <span class="contact-value">giovannisouza216@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/sxLsmNLBZVJXNttF9" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon-wrapper bg-white">
+                        <img src="./img/localizacao.png" alt="Localização" class="contact-icon">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Localização</span>
+                        <span class="contact-value">Varginha - MG</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2025 Giovanni Martins (@gsmartins216). Todos os direitos reservados.
                 </p>
             </div>
-
-            <div class="containerIcones">
-                <div class="container">
-                    <a href="https://www.linkedin.com/in/giovanni-martins-21bb94264/" class="container" target="_blank">
-                        <img src="./img/link.png" alt="linkedin" class="iconesF">
-                        <p class="textoCon">
-                            Giovanni Martins
-                        </p>
-                    </a>
-                </div>
-                <div class="container">
-                    <a href="mailto:giovannisouza213@gmail.com" class="container" target="_blank">
-                        <img src="./img/email.png" alt="email" class="iconesF">
-                        <p class="textoCon">
-                            giovannisouza216@gmail.com
-                        </p>
-                    </a>
-                </div>
-                <div class="container">
-                    <a href="https://maps.app.goo.gl/sxLsmNLBZVJXNttF9" class="container" target="_blank">
-                        <img src="./img/localizacao.png" alt="localizacao" class="iconesF" style="background-color: white;">
-                        <p class="textoCon">
-                            Varginha - MG
-                        </p>
-                    </a>
-                </div>
-
-            </div>
         </div>
-        <p class="direitos">
-            © Giovanni Martins (@gsmartins216) 2025 - Todos os direitos reservados.
-        </p>
     </footer>
+
+    <!-- Script Principal -->
     <script src="controle.js"></script>
 </body>
 
